@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500family=Roboto:wght@300;400&family=Source+Sans+Pro&display=swap');
+.navbar a{
+    font-size: 25px;
+    font-family: "balsamiq sans";
+    margin-right: 20px;
+}
+ .jumbotrons{
+    position: relative;
+    background-image: url(../asset/jumbo.png);
+    background-size: cover;
+    height: 400px;
+}
+.jumbotrons .container-fluid{
+    position: absolute;
+    z-index: 2;
+    top: 0;
+}
+.jumbotrons::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 400px;
+    /* background-image: linear-gradient(to top, rgba(0, 0, 0, 1),rgba(0, 0, 0, 0)); */
+    position: absolute;
+    bottom: 0;
+}
+.container-fluid a{
+    font-family: 'Source Sans Pro';
+}
+.copyright {
+    background-color: #000000;
+}
+
+html, body, header, .scroller{
+    scroll-behavior: smooth;
+}
+
+/* Desktop Styling */
+@media (min-width: 992px) {
+    .navbar-brand, .navbar-nav .nav-link{
+        color: rgb(255, 255, 255) !important;
+        text-shadow: 1px 1px 1px rgba(0,0,0);
+    }
+    .nav-scroll{
+        background-color: rgba(0,0,0,1) !important;
+        z-index: 3 !important;
+        /* box-shadow: 0px 1px 10px rgba(0,0,0,0.4); */
+        transition-duration: 0.6s;
+    }
+    .navbar{
+        position: fixed !important;
+        top: 0;
+        width: 100%;
+        z-index: 3;
+        background-color: rgba(0,0,0,1);
+    }
+    div.judulArtikel{
+        width: fit-content;
+        height: 50px;
+        margin-bottom: 10px;
+        background-color: black;
+        border-top-right-radius:20px ;
+        border-bottom-right-radius:20px ;
+    }
+    p.judulArtikel{
+        margin-top: 9vw;
+        font-size: 25px;
+        font-family: 'Balsamiq sans';
+        color: white;
+        padding: 7px;
+    }
+    img.imgArtikel{
+        width: 100%;
+        height: 350px;
+    }
+    div.isiArtikel p{
+        font-family: 'Poppins';
+        text-align: justify;
+        font-size: 20px;
+        padding-left: 20px;
+        padding-right: 10px;
+        color: black;
+    }
+    a.bek:hover{
+        opacity: 0.5;
+    }
+    .footerJudul{
+        font-size: 20px;
+        font-weight: bold;
+        font-family: 'Poppins';
+    }
+    .iconFooter{
+        width: 30px;
+        height: 29px;
+        margin-right: 15px;        
+    }
+    .iconFooterIG{
+        width: 28px;
+        height: 25px;
+        margin-right: 15px;        
+    }
+    .iconFooterTW{
+        width: 27px;
+        height: 24px;
+        margin-right: 15px;        
+    }
+    .linkFooter{
+        color: black;
+        font-family: 'Roboto';
+    }
+}
+/* Finish */
+
+
+/* Mobile Styling */
+@media (max-width: 768px){
+    .navbar-brand, .navbar-nav .nav-link{
+        color: rgba(0,0,0,1) !important;
+    }
+    div.judulArtikel{
+        width: 300px;
+        height: 50px;
+        margin-bottom: 10px;
+        background-color: black;
+        border-top-right-radius:20px ;
+        border-bottom-right-radius:20px ;
+    }
+    p.judulArtikel{
+        margin-top: 7vw;
+        font-size: 15px;
+        font-family: 'Balsamiq sans';
+        color: white;
+        padding: 4px;
+    }
+    img.imgArtikel{
+        width: 100%;
+        height: 200px;
+    }
+    div.isiArtikel p{
+        font-family: 'Poppins';
+        text-align: justify;
+        font-size: 15px;
+        padding-left: 15px;
+        padding-right: 10px;
+        color: black;
+    }
+    .footerJudul{
+        font-size: 20px;
+        font-weight: bold;
+        font-family: 'Poppins';
+        text-align: center;
+    }
+    .iconFooter{
+        width: 30px;
+        height: 29px;
+        margin-right: 15px;        
+    }
+    .iconFooterIG{
+        width: 28px;
+        height: 25px;
+        margin-right: 15px;        
+    }
+    .iconFooterTW{
+        width: 27px;
+        height: 24px;
+        margin-right: 15px;        
+    }
+    .linkFooter{
+        color: black;
+        font-family: 'Roboto';
+    }
+}
+/* Finish */

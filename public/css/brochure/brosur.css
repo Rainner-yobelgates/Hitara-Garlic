@@ -1,0 +1,64 @@
+
+@media (min-width:991px) {
+    .imgBrosur{
+        width: 500px;
+        height: 95vh;
+        padding: 10px;
+    }
+    .brosur{
+        background-color: whitesmoke;
+        width: fit-content;
+        border: 2px solid rgb(0,0,0);
+        box-shadow: 1px 1px rgb(0,0,0);
+        margin: auto;
+    }
+    .downloadBrosur{
+        top: 0;
+        position: absolute;
+        margin-left: 830px;
+        margin-top: 18px;
+    }
+    .btnBack{
+        top: 0;
+        position: absolute;
+        margin-left: 865px;
+        margin-top: 105px;
+    }
+    .btnBack:hover{
+        opacity: 0.5;
+    }
+    .btnBrosur:hover{
+        opacity: 0.5;
+    }
+    .icon{
+        height: 40px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .imgBrosur{
+        width: 100%;
+        height: 60vh;
+        padding: 10px;
+    }
+    .brosur{
+        background-color: whitesmoke;
+        width: fit-content;
+        border: 2px solid rgb(0,0,0);
+        box-shadow: 1px 1px rgb(0,0,0);
+        margin-bottom: 10px;
+    }
+    .btnBrosur{
+        margin-left: 3.5rem;
+        position: relative;
+    }
+    .btnBack{
+        margin-left: 5.5rem;
+        position: relative;
+    }
+    
+    .icon{
+        height: 40px;
+    }
+}

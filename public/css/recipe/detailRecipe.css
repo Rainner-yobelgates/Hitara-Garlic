@@ -1,0 +1,290 @@
+@font-face{
+    font-family: "balsamiq";
+    src: url("../../fonts/Balsamiq_Sans/BalsamiqSans-Regular.ttf") format("truetype");
+}
+@font-face{
+    font-family: "Poppins";
+    src: url("../../fonts/Poppins/Poppins-Regular.ttf") format("truetype");
+}
+@font-face{
+    font-family: "Source Sans Pro";
+    src: url("../../fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf") format("truetype");
+}
+@font-face{
+    font-family: "Roboto";
+    src: url("../../fonts/Roboto/Roboto-Regular.ttf") format("truetype");
+}
+
+.navbar a{
+    font-size: 25px;
+    font-family: "balsamiq";
+    margin-right: 20px;
+}
+/* Jumbotrons */
+.jumbotrons{
+    position: relative;
+    background-image: url(../../img/web/jumbo2.jpg);
+    background-size: cover;
+}
+.jumbotrons .container-fluid{
+    position: absolute;
+    z-index: 2;
+    top: 0;
+}
+.jumbotrons::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    bottom: 0;
+}
+.copyright {
+    background-color: #000000;
+}
+html, body, header, .scroller{
+    scroll-behavior: smooth;
+}
+
+
+/* Dekstop Styling */
+@media (min-width: 992px) { 
+    .navbar-brand, .navbar-nav .nav-link{
+        color: rgb(255, 255, 255) !important;
+        text-shadow: 1px 1px 1px rgba(0,0,0);
+    }
+    .jumbotron{
+        background-size: cover;
+        width: 100%;
+        height: 400px;
+        color: white;
+        border-bottom-left-radius: 100px;
+    }
+
+    .jumbotron::after{
+        height: 500px;        
+    }
+
+    .jumbotron p{
+        font-size: 40px;
+        margin-left: 7rem;
+        margin-top: 175px;
+        color: white;
+        font-family: 'balsamiq';
+        font-weight: bold;
+
+    }
+    .nav-scroll{
+        background-color: rgba(0,0,0,1) !important;
+        z-index: 3 !important;
+        transition-duration: 0.6s;
+    }
+    .navbar{
+        position: fixed !important;
+        top: 0;
+        width: 100%;
+        z-index: 3;
+        background-color: transparent;
+    }
+    .bek:hover{
+        opacity: 0.5;
+    }
+    div.judulAbout{
+        width: 100%;
+        height: 55px;
+        background-color: #000000;
+        border-radius: 40px;
+        margin: auto;
+    }
+    p.judulAbout{
+        font-size: 40px;
+        color: white;
+        text-align: center;
+        font-family: 'balsamiq';
+        font-weight: bold;
+    }
+    .imgRecipe{
+        width: 530px;
+        border-radius: 30px;
+    }
+    .subJudul{
+        font-family: 'Roboto';
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    .isiMaterial{
+        font-family: 'Roboto';
+        font-size: 19px;
+    }
+    .cardBTN:hover{
+        opacity: 0.5;
+    }
+    .footerJudul{
+        font-size: 20px;
+        font-weight: bold;
+        font-family: 'Poppins';
+    } 
+    .iconFooter{
+        width: 30px;
+        height: 29px;
+        margin-right: 15px;        
+    }
+    .iconFooterIG{
+        width: 28px;
+        height: 25px;
+        margin-right: 15px;        
+    }
+    .iconFooterTW{
+        width: 27px;
+        height: 24px;
+        margin-right: 15px;        
+    }
+    .linkFooter{
+        color: black;
+        font-family: 'Roboto';
+    }
+    a.linkFooter:hover{
+        opacity: 0.5;
+        color: black;
+    }
+    .footer{
+        margin-top: 72px;
+    }   
+    .non-active:hover::after{
+        content: '';
+        display: block;
+        border-bottom: 3px solid red;  
+        width: 50%;
+        margin: auto;  
+        border-top-right-radius: 25px;  
+        border-top-left-radius: 25px;  
+    }
+    .active::after{
+        content: '';
+        display: block;
+        border-bottom: 4px solid red;  
+        width: 50%;
+        margin: auto;  
+        border-top-right-radius: 25px;  
+        border-top-left-radius: 25px;    
+    }.non-active:hover::after{
+        content: '';
+        display: block;
+        border-bottom: 3px solid red;  
+        width: 50px;
+        margin: auto;  
+        border-top-right-radius: 25px;  
+        border-top-left-radius: 25px;  
+    }
+    .active::after{
+        content: '';
+        display: block;
+        border-bottom: 4px solid red;  
+        width: 50px;
+        margin: auto;  
+        border-top-right-radius: 25px;  
+        border-top-left-radius: 25px;    
+    }   
+}
+/* Finish */
+
+/* Mobile Styling */
+@media (max-width: 768px) { 
+    .navbar-brand, .navbar-nav .nav-link{
+        color: rgb(0, 0, 0) !important;
+    }
+    .jumbotron{
+        background-size: cover;
+        width: 100%;
+        height: 300px;
+        color: white;
+    }
+    .jumbotrons::after{
+        content: '';
+        display: block;
+        width: 100%;
+        height: 200px;
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));
+        position: absolute;
+        z-index: 1;
+        bottom: 0;
+    }
+
+    .jumbotron::after{
+        height: 300px;        
+    }
+
+    .jumbotron p{
+        font-family: 'balsamiq';
+        font-weight: bold;
+        margin-top: 200px;
+        color: white;
+        text-align: center;
+
+    }
+    .navbar{
+        top: 0;
+        width: 100%;
+        z-index: 3;
+    }
+    div.judulAbout{
+        width: 350px;
+        height: 30px;
+        background-color: #000000;
+        border-radius: 40px;
+        margin: auto;
+    }
+    p.judulAbout{
+        font-size: 20px;
+        color: white;
+        text-align: center;
+        font-family: 'balsamiq';
+        font-weight: bold;
+    }
+    .imgRecipe{
+        width: 320px;
+        height: 200px;
+    }
+    .subJudul{
+        font-family: 'Roboto';
+        font-size: 22px;
+        font-weight: bold;
+    }
+    .isiMaterial{
+        font-family: 'Roboto';
+        font-size: 18px;
+    }
+    .footerJudul{
+        font-size: 20px;
+        font-weight: bold;
+        font-family: 'Poppins';
+        text-align: center;
+    } 
+    .iconFooter{
+        width: 30px;
+        height: 29px;
+        margin-right: 15px;        
+    }
+    .iconFooterIG{
+        width: 28px;
+        height: 25px;
+        margin-right: 15px;        
+    }
+    .iconFooterTW{
+        width: 27px;
+        height: 24px;
+        margin-right: 15px;        
+    }
+    .linkFooter{
+        color: black;
+        font-family: 'Roboto';
+    }
+    a.linkFooter:hover{
+        opacity: 0.5;
+        color: black;
+    }
+    .footer{
+        margin-top: 72px;
+    }   
+}
+/* Finish */
